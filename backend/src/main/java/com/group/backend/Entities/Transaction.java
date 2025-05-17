@@ -15,5 +15,6 @@ public class Transaction {
     private double amount;
     private Date date;
     private String description;
-    
+    @ManyToOne
+    private Category category;
 }
