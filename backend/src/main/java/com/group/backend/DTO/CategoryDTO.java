@@ -8,9 +8,7 @@ import lombok.Setter;
 
 import java.util.List;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@Setter
-@Getter
+
 public class CategoryDTO {
     public Long getId() {
         return id;
@@ -30,6 +28,4 @@ public class CategoryDTO {
 
     private Long id;
     private String categoryName;
-    //private List<Transaction> transactions;
-    //private Budget budget;
 }

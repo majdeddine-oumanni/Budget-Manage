@@ -2,13 +2,15 @@ package com.group.backend.DTO;
 import com.group.backend.Entities.Category;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.time.LocalDate;
 import java.util.Date;
 
 @Setter
 @Getter
 public class TransactionDTO {
     private double amount;
-    private Date date;
+    private LocalDate date;
 
     public double getAmount() {
         return amount;
@@ -18,11 +20,11 @@ public class TransactionDTO {
         this.amount = amount;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

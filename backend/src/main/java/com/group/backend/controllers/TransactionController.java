@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController("/transaction")
+@RestController
 public class TransactionController {
     private final TransactionService transactionService;
 
